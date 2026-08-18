@@ -1,4 +1,4 @@
-# 🇨🇬 Festival Congo-Brazzaville
+# Festival Congo-Brazzaville
 
 Plateforme web événementielle conçue pour promouvoir un festival au
 Congo-Brazzaville et permettre aux visiteurs de découvrir la programmation,
@@ -6,7 +6,7 @@ les artistes, les médias et les informations liées à la billetterie.
 
 ---
 
-## 📌 À propos du projet
+## A propos du projet
 
 Ce projet est réalisé dans le cadre d'un projet collaboratif à
 **AKIENI ACADEMY**.
@@ -21,7 +21,7 @@ Le projet suit une organisation basée sur les **User Stories**, les
 
 ---
 
-## 🎯 Objectifs
+## Objectifs
 
 La plateforme permet notamment de :
 
@@ -40,9 +40,9 @@ La plateforme permet notamment de :
 
 ---
 
-## 🧩 Fonctionnalités
+## Fonctionnalites
 
-### 🏠 Accueil
+### Accueil
 
 La page d'accueil présente immédiatement :
 
@@ -52,7 +52,7 @@ La page d'accueil présente immédiatement :
 - un compte à rebours ;
 - les principaux appels à l'action.
 
-### 📅 Programmation
+### Programmation
 
 La programmation permet de consulter les différentes activités
 organisées pendant le festival.
@@ -63,26 +63,26 @@ La navigation est organisée par journée :
 - Samedi
 - Dimanche
 
-### 🎤 Line-up
+### Line-up
 
 Présentation des artistes et intervenants avec possibilité de filtrer
 les résultats.
 
-### 🖼️ Média & Galerie
+### Media & Galerie
 
 Présentation des photos et contenus visuels liés au festival.
 
-### 🎟️ Billetterie
+### Billetterie
 
 Présentation des différentes offres de billets et des informations
 nécessaires à la réservation.
 
-### 📝 Inscription
+### Inscription
 
 Formulaires permettant aux utilisateurs de renseigner les informations
 nécessaires à leur parcours.
 
-### 📱 Responsive
+### Responsive
 
 L'interface est conçue pour s'adapter aux :
 
@@ -96,23 +96,23 @@ L'interface est conçue pour s'adapter aux :
 
 ---
 
-# 📋 Organisation fonctionnelle
+## Organisation fonctionnelle
 
 Le projet est organisé autour des Epics définies dans Jira :
 
-| Epic | Fonctionnalité |
+| Epic | Fonctionnalite |
 |---|---|
 | EP-01 | Accueil et compte à rebours |
 | EP-02 | Programmation et onglets |
 | EP-03 | Line-up et filtrage |
-| EP-04 | Média et galerie |
+| EP-04 | Media et galerie |
 | EP-05 | Inscription et formulaires |
 | EP-06 | Responsive et navigation mobile |
-| EP-07 | Qualité et conformité |
+| EP-07 | Qualite et conformite |
 
 ---
 
-# 🛠️ Technologies utilisées
+## Technologies utilisees
 
 ### Frontend
 
@@ -126,58 +126,58 @@ Le projet est organisé autour des Epics définies dans Jira :
 - Git
 - GitHub
 
-### Environnement de développement
+### Environnement de developpement
 
 - Visual Studio Code
 
 ---
 
-# 🎨 Identité visuelle
+## Identite visuelle
 
-L'identité visuelle s'inspire du **Congo-Brazzaville**.
+L'identite visuelle s'inspire du **Congo-Brazzaville**.
 
 La palette graphique reprend les couleurs du drapeau national :
 
-🟢 Vert  
-🟡 Jaune  
-🔴 Rouge
+- Vert
+- Jaune
+- Rouge
 
-L'objectif est de créer une identité visuelle moderne tout en conservant
-une référence claire à l'identité congolaise.
+L'objectif est de creer une identite visuelle moderne tout en conservant
+une reference claire a l'identite congolaise.
 
 ---
 
-# 👥 Équipe
+## Equipe
 
-Le projet est réalisé par deux collaborateurs.
+Le projet est realise par deux collaborateurs.
 
-| Membre | Responsabilité |
+| Membre | Responsabilite |
 |---|---|
-| BABA Aristote | Développement, intégration frontend, responsive design et gestion Git/GitHub |
-| AYESSA Paulina Andrea Divine | Business Analysis, User Stories, spécifications fonctionnelles et gestion du backlog Jira |
+| BABA Aristote | Developpement, integration frontend, responsive design et gestion Git/GitHub |
+| AYESSA Paulina Andrea Divine | Business Analysis, User Stories, specifications fonctionnelles et gestion du backlog Jira |
 
-Les responsabilités peuvent évoluer au cours du projet selon les besoins
+Les responsabilites peuvent evoluer au cours du projet selon les besoins
 du sprint.
 
 ---
 
-# 🔀 Workflow Git
+## Workflow Git
 
-Le développement est réalisé avec Git et GitHub.
+Le developpement est realise avec Git et GitHub.
 
-Chaque fonctionnalité est développée sur une branche dédiée avant
-intégration dans la branche principale.
+Chaque fonctionnalite est developpee sur une branche dediee avant
+integration dans la branche principale.
 
 Exemple :
 
 ```text
 main
- │
+ |
  ├── feature/home
- │
+ |
  ├── feature/billetterie
- │
+ |
  ├── feature/programmation
- │
+ |
  └── feature/responsive
 ```

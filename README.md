@@ -6,18 +6,43 @@ les artistes, les médias et les informations liées à la billetterie.
 
 ---
 
-## A propos du projet
+## Demonstration
 
-Ce projet est réalisé dans le cadre d'un projet collaboratif à
-**AKIENI ACADEMY**.
+Deo : a venir
 
-L'objectif est de concevoir une expérience web moderne, accessible et
-responsive permettant aux visiteurs de découvrir facilement le festival
-depuis un ordinateur, une tablette ou un smartphone.
+---
 
-Le projet suit une organisation basée sur les **User Stories**, les
-**Epics**, le suivi des tâches dans **Jira** et la gestion du code avec
-**Git/GitHub**.
+## Gestion du projet
+
+Le suivi des fonctionnalites et des taches est effectue avec Jira.
+
+Les fonctionnalites sont organisees sous forme d'Epics et de User Stories,
+avec des criteres d'acceptation permettant de verifier chaque livrable.
+
+---
+
+## Contexte
+
+Projet realise dans le cadre d'une formation a :
+
+**AKIENI ACADEMY**
+
+Cette experience permet de mettre en pratique :
+
+- l'analyse fonctionnelle ;
+- la conception d'interface ;
+- le developpement frontend ;
+- le responsive design ;
+- Git et GitHub ;
+- la gestion de projet avec Jira ;
+- le travail collaboratif.
+
+---
+
+## Projet realise au Congo-Brazzaville
+
+Une experience de conception et de developpement autour d'un evenement
+culturel pense pour le public congolais.
 
 ---
 
@@ -25,15 +50,15 @@ Le projet suit une organisation basée sur les **User Stories**, les
 
 La plateforme permet notamment de :
 
-- découvrir le festival dès la page d'accueil ;
-- consulter les dates de l'événement ;
-- suivre le compte à rebours ;
+- decouvrir le festival des la page d'accueil ;
+- consulter les dates de l'evenement ;
+- suivre le compte a rebours ;
 - consulter la programmation ;
-- découvrir les artistes du festival ;
+- decouvrir les artistes du festival ;
 - filtrer le line-up ;
-- consulter les médias et la galerie ;
+- consulter les medias et la galerie ;
 - consulter les offres de billetterie ;
-- accéder aux formulaires d'inscription ;
+- acceder aux formulaires d'inscription ;
 - consulter les informations pratiques ;
 - consulter la FAQ ;
 - contacter l'organisation.
@@ -44,20 +69,20 @@ La plateforme permet notamment de :
 
 ### Accueil
 
-La page d'accueil présente immédiatement :
+La page d'accueil presente immediatement :
 
 - le nom du festival ;
 - les dates du festival ;
-- une image représentative ;
-- un compte à rebours ;
-- les principaux appels à l'action.
+- une image representative ;
+- un compte a rebours ;
+- les principaux appels a l'action.
 
 ### Programmation
 
-La programmation permet de consulter les différentes activités
-organisées pendant le festival.
+La programmation permet de consulter les differentes activites
+organisees pendant le festival.
 
-La navigation est organisée par journée :
+La navigation est organisee par journee :
 
 - Vendredi
 - Samedi
@@ -65,26 +90,26 @@ La navigation est organisée par journée :
 
 ### Line-up
 
-Présentation des artistes et intervenants avec possibilité de filtrer
-les résultats.
+Presentation des artistes et intervenants avec possibilite de filtrer
+les resultats.
 
 ### Media & Galerie
 
-Présentation des photos et contenus visuels liés au festival.
+Presentation des photos et contenus visuels lies au festival.
 
 ### Billetterie
 
-Présentation des différentes offres de billets et des informations
-nécessaires à la réservation.
+Presentation des differentes offres de billets et des informations
+necessaires a la reservation.
 
 ### Inscription
 
 Formulaires permettant aux utilisateurs de renseigner les informations
-nécessaires à leur parcours.
+necessaires a leur parcours.
 
 ### Responsive
 
-L'interface est conçue pour s'adapter aux :
+L'interface est concue pour s'adapter aux :
 
 - smartphones ;
 - iPhone ;
@@ -98,11 +123,11 @@ L'interface est conçue pour s'adapter aux :
 
 ## Organisation fonctionnelle
 
-Le projet est organisé autour des Epics définies dans Jira :
+Le projet est organise autour des Epics definies dans Jira :
 
 | Epic | Fonctionnalite |
 |---|---|
-| EP-01 | Accueil et compte à rebours |
+| EP-01 | Accueil et compte a rebours |
 | EP-02 | Programmation et onglets |
 | EP-03 | Line-up et filtrage |
 | EP-04 | Media et galerie |
@@ -149,15 +174,13 @@ une reference claire a l'identite congolaise.
 
 ## Equipe
 
-Le projet est realise par deux collaborateurs.
+**BABA Aristote** -- Developpement et integration
 
-| Membre | Responsabilite |
-|---|---|
-| BABA Aristote | Developpement, integration frontend, responsive design et gestion Git/GitHub |
-| AYESSA Paulina Andrea Divine | Business Analysis, User Stories, specifications fonctionnelles et gestion du backlog Jira |
+**AYESSA Paulina Andrea Divine** -- Business Analysis et conception fonctionnelle
 
-Les responsabilites peuvent evoluer au cours du projet selon les besoins
-du sprint.
+Elle transforme le besoin en specifications, il transforme les specifications
+en produit. Deux competences complementaires au service d'un seul objectif :
+livrer une plateforme fonctionnelle et soignee.
 
 ---
 
@@ -181,3 +204,9 @@ main
  |
  └── feature/responsive
 ```
+
+---
+
+## Licence
+
+Projet realise dans un cadre pedagogique.

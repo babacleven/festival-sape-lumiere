@@ -10,6 +10,10 @@ document.addEventListener("DOMContentLoaded", () => {
     function update() {
       const now = Date.now();
       const ms = Math.max(0, target - now);
+      if (ms === 0) {
+        countdownEl.innerHTML = '<p style="font-size:clamp(18px,4vw,28px);font-weight:700;color:var(--green);text-align:center">Le Festival est ouvert !</p>';
+        return;
+      }
       const d = Math.floor(ms / 86400000);
       const h = Math.floor((ms / 3600000) % 24);
       const m = Math.floor((ms / 60000) % 60);

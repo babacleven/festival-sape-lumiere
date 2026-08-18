@@ -433,10 +433,11 @@ h1, h2, h3, h4 { font-family: 'Playfair Display', Georgia, serif; line-height: 1
 .partenaire-card:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.06); }
 .partenaire-card_logo {
   display: flex; align-items: center; justify-content: center;
-  font-family: 'Inter', sans-serif; font-size: clamp(11px, 1.5vw, 14px); font-weight: 800;
-  letter-spacing: 0.06em; color: var(--anthracite);
-  min-height: 44px; margin-bottom: 8px; text-align: center;
+  max-width: 100%; max-height: 60px; width: auto; height: auto;
+  object-fit: contain; filter: grayscale(20%); opacity: 0.85;
+  transition: all 0.3s var(--ease); margin-bottom: 8px;
 }
+.partenaire-card:hover .partenaire-card_logo { filter: grayscale(0%); opacity: 1; }
 .partenaire-card_name { font-size: clamp(11px, 1.4vw, 13px); color: var(--gray); }
 
 /* ============================================================

@@ -3,14 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Festival SAPE & LUMIERE ” Brazzaville, Congo</title>
+    <title>Festival SAPE & LUMIERE - Brazzaville, Congo</title>
     <meta
       name="description"
-      content="Trois jours de musique, mode, art et culture Ã  Brazzaville. DÃ©couvrez la programmation, le line-up et rÃ©servez votre pass au festival SAPE & LUMIERE."
+      content="Trois jours de musique, mode, art et culture à Brazzaville. Découvrez la programmation, le line-up et réservez votre pass au festival SAPE & LUMIERE."
     />
     <meta
       property="og:title"
-      content="Festival SAPE & LUMIERE ” Brazzaville, Congo"
+      content="Festival SAPE & LUMIERE - Brazzaville, Congo"
     />
     <meta
       property="og:description"
@@ -39,18 +39,18 @@
           <ul class="header_menu">
             <li><a href="index.html" class="header_link active">Accueil</a></li>
             <li>
-              <a href="#" class="header_link">Programmation</a>
+              <a href="programmation.html" class="header_link">Programmation</a>
             </li>
-            <li><a href="#" class="header_link">Line-up</a></li>
+            <li><a href="line-up.html" class="header_link">Line-up</a></li>
             <li>
-              <a href="#" class="header_link">Billetterie</a>
+              <a href="billetterie.html" class="header_link">Billetterie</a>
             </li>
-            <li><a href="#" class="header_link">FAQ</a></li>
-            <li><a href="#" class="header_link">Contact</a></li>
-            <li><a href="#" class="header_link">Media</a></li>
+            <li><a href="faq.html" class="header_link">FAQ</a></li>
+            <li><a href="contact.html" class="header_link">Contact</a></li>
+            <li><a href="media.html" class="header_link">Media</a></li>
           </ul>
         </nav>
-        <a href="#" class="header_cta">Billetterie</a>
+        <a href="billetterie.html" class="header_cta">Billetterie</a>
         <button
           class="header_hamburger"
           aria-label="Ouvrir le menu"
@@ -72,14 +72,16 @@
         </button>
         <nav class="mobile-menu_list">
           <a href="index.html" class="mobile-menu_link">Accueil</a>
-          <a href="#" class="mobile-menu_link">Programmation</a>
-          <a href="#" class="mobile-menu_link">Line-up</a>
-          <a href="#" class="mobile-menu_link">Billetterie</a>
-          <a href="#" class="mobile-menu_link">FAQ</a>
-          <a href="#" class="mobile-menu_link">Contact</a>
-          <a href="#" class="mobile-menu_link">Media</a>
+          <a href="programmation.html" class="mobile-menu_link"
+            >Programmation</a
+          >
+          <a href="line-up.html" class="mobile-menu_link">Line-up</a>
+          <a href="billetterie.html" class="mobile-menu_link">Billetterie</a>
+          <a href="faq.html" class="mobile-menu_link">FAQ</a>
+          <a href="contact.html" class="mobile-menu_link">Contact</a>
+          <a href="media.html" class="mobile-menu_link">Media</a>
         </nav>
-        <a href="#" class="mobile-menu_cta">Reserver mon pass</a>
+        <a href="billetterie.html" class="mobile-menu_cta">Réserver mon pass</a>
       </div>
     </div>
 
@@ -101,8 +103,8 @@
               >
             </h1>
             <p class="hero_tagline">
-              Une celebration contemporaine de la culture, de la créativite et
-              de l'elegance congolaise au coeur de Brazzaville.
+              Une célébration contemporaine de la culture, de la créativité et
+              de l'élégance congolaise au cœur de Brazzaville.
             </p>
             <div class="hero_details">
               <div class="hero_date">
@@ -113,14 +115,16 @@
                 <span class="hero_date-value">22 Novembre 2026</span>
               </div>
               <p class="hero_location">
-                Brazzaville &bull; Republique du Congo
+                Brazzaville &bull; République du Congo
               </p>
             </div>
             <div class="hero_actions">
-              <a href="#" class="btn btn--primary btn--lg"
-                >Decouvrir le festival</a
+              <a href="programmation.html" class="btn btn--primary btn--lg"
+                >Découvrir le festival</a
               >
-              <a href="#" class="btn btn--outline btn--lg">Reserver mon pass</a>
+              <a href="billetterie.html" class="btn btn--outline btn--lg"
+                >Réserver mon pass</a
+              >
             </div>
           </div>
           <div class="hero_gallery">
@@ -192,7 +196,7 @@
           <div class="section-header">
             <span class="section-header_tag">Programmation</span>
             <h2 class="section-header_title">
-              3 jours.<br />Une experience inoubliable.
+              3 jours.<br />Une expérience inoubliable.
             </h2>
           </div>
           <div
@@ -227,7 +231,9 @@
           </div>
           <div id="program-list" class="programmation_list"></div>
           <div style="text-align: center; margin-top: 40px">
-            <a href="#" class="btn btn--primary">Voir le programme complet</a>
+            <a href="programmation.html" class="btn btn--primary"
+              >Voir le programme complet</a
+            >
           </div>
         </div>
       </section>
@@ -240,13 +246,12 @@
             <h2 class="section-header_title">
               Les artistes<br />qui feront vibrer Brazzaville
             </h2>
-            <p class="section-header_desc">
-              Kevin Malonga, Nzinga, DJ Loufoulakari, Les Sapeurs de Bacongo,
-              Maison Ndouna et bien d'autres.
-            </p>
           </div>
-          <div style="text-align: center">
-            <a href="#" class="btn btn--primary">Decouvrir le line-up</a>
+          <div class="lineup_grid" id="lineup-preview"></div>
+          <div style="text-align: center; margin-top: 40px">
+            <a href="line-up.html" class="btn btn--primary"
+              >Voir tous les artistes</a
+            >
           </div>
         </div>
       </section>
@@ -258,24 +263,24 @@
             <div class="sape_text">
               <span class="section-header_tag">Sape &amp; mode</span>
               <h2 class="sape_title">
-                L'elegance congolaise<br /><span class="sape_accent"
+                L'élégance congolaise<br /><span class="sape_accent"
                   >en mouvement.</span
                 >
               </h2>
               <p class="sape_desc">
-                Ne dans les quartiers de Bacongo et Poto-Poto, la Societe des
-                Ambianceurs et des Personnes Elegantes est une discipline, un
-                art de vivre et une fierte. Le festival lui consacre un parcours
+                Né dans les quartiers de Bacongo et Poto-Poto, la Société des
+                Ambianceurs et des Personnes Élégantes est une discipline, un
+                art de vivre et une fierté. Le festival lui consacre un parcours
                 complet.
               </p>
               <ul class="sape_list">
                 <li class="sape_list-item">
-                  <strong>Defiles</strong>
+                  <strong>Défilés</strong>
                   <p>Trois shows en plein air chaque soir.</p>
                 </li>
                 <li class="sape_list-item">
-                  <strong>Createurs</strong>
-                  <p>Dix maisons congolaises exposees.</p>
+                  <strong>Créateurs</strong>
+                  <p>Dix maisons congolaises exposées.</p>
                 </li>
                 <li class="sape_list-item">
                   <strong>Street style</strong>
@@ -283,11 +288,14 @@
                 </li>
                 <li class="sape_list-item">
                   <strong>Culture vestimentaire</strong>
-                  <p>Conferences et archives de la SAPE.</p>
+                  <p>Conférences et archives de la SAPE.</p>
                 </li>
               </ul>
-              <a href="#" class="btn btn--primary" style="margin-top: 2rem"
-                >Decouvrir la SAPE</a
+              <a
+                href="media.html"
+                class="btn btn--primary"
+                style="margin-top: 2rem"
+                >Découvrir la SAPE</a
               >
             </div>
             <div class="sape_image">
@@ -307,11 +315,11 @@
         <div class="container inscription_inner">
           <h2 class="inscription_title">Rejoignez le festival</h2>
           <p class="inscription_desc">
-            Visiteurs, artistes, benevoles, partenaires et medias : les
+            Visiteurs, artistes, bénévoles, partenaires et médias : les
             inscriptions sont ouvertes.
           </p>
           <div class="inscription_action">
-            <a href="#" class="btn btn--primary btn--lg"
+            <a href="inscription.html" class="btn btn--primary btn--lg"
               >S'inscrire maintenant</a
             >
           </div>
@@ -319,17 +327,17 @@
       </section>
 
       <!-- PARTENAIRES -->
-      <!--section
+      <section
         class="partenaires"
         style="padding-top: calc(var(--header-h) + 40px)"
-      >
+         >
         <div class="container">
           <div class="section-header">
             <span class="section-header_tag">Partenaires</span>
             <h2 class="section-header_title">Ils nous font confiance</h2>
             <p class="section-header_desc">
-              Sponsors, partenaires institutionnels et medias accompagnent la
-              premiere edition.
+              Sponsors, partenaires institutionnels et médias accompagnent la
+              première édition.
             </p>
           </div>
           <div class="partenaires_grid">
@@ -461,7 +469,7 @@
             </div>
           </div>
         </div>
-      </section-->
+      </section
     </main>
 
     <!-- FOOTER -->
@@ -537,11 +545,11 @@
               <h4 class="footer_col-title">Navigation</h4>
               <ul class="footer_list">
                 <li><a href="index.html">Accueil</a></li>
-                <li><a href="#">Programmation</a></li>
-                <li><a href="#">Line-up</a></li>
-                <li><a href="#">Billetterie</a></li>
-                <li><a href="#">FAQ</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="programmation.html">Programmation</a></li>
+                <li><a href="line-up.html">Line-up</a></li>
+                <li><a href="billetterie.html">Billetterie</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
               </ul>
             </div>
             <div>
@@ -549,11 +557,11 @@
               <p class="footer_address">Brazzaville<br />Republique du Congo</p>
               <p class="footer_address">
                 <a
-                  href="https://wa.me/242064400881"
+                  href="https://wa.me/242068894725"
                   target="_blank"
                   rel="noopener noreferrer"
                   style="color: inherit"
-                  >+242 06 440 08 81</a
+                  >+242 06 889 47 25</a
                 >
               </p>
               <p class="footer_address">
@@ -565,7 +573,7 @@
             <div>
               <h4 class="footer_col-title">Participer</h4>
               <p class="footer_address">
-                Visiteurs, artistes, benevoles, partenaires et medias : les
+                Visiteurs, artistes, bénévoles, partenaires et médias : les
                 inscriptions sont ouvertes.
               </p>
             </div>
@@ -573,11 +581,11 @@
         </div>
         <div class="footer_bottom">
           <p class="footer_copy">
-            &copy; 2026 SAPE &amp; LUMIERE FESTIVAL ” Tous droits reserves.
+            &copy; 2026 SAPE &amp; LUMIERE FESTIVAL - Tous droits réservés.
           </p>
           <div class="footer_legal">
-            <a href="#">Mentions legales</a>
-            <a href="#">Politique de confidentialite</a>
+            <a href="#">Mentions légales</a>
+            <a href="#">Politique de confidentialité</a>
           </div>
         </div>
       </div>

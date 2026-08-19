@@ -1,187 +1,307 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Billetterie — Festival SAPE & LUMIERE Brazzaville</title>
-  <meta name="description" content="Reservez votre pass pour le Festival SAPE & LUMIERE : Pass 1 jour et Pass 3 jours, reservez via WhatsApp.">
-  <link rel="icon" href="public/favicon.ico">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Billetterie - Festival SAPE & LUMIERE Brazzaville</title>
+    <meta
+      name="description"
+      content="Réservez votre pass pour le Festival SAPE & LUMIERE : Pass 1 jour et Pass 3 jours, réservez via WhatsApp."
+    />
+    <link rel="icon" href="public/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,700;0,800;0,900;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="header header--scrolled">
+      <div class="header_inner">
+        <a href="index.html" class="header_logo">
+          <span class="header_logo-main">SAPE &amp; LUMIERE</span>
+          <span class="header_logo-sub">Festival</span>
+        </a>
+        <nav class="header_nav">
+          <ul class="header_menu">
+            <li><a href="index.html" class="header_link">Accueil</a></li>
+            <li>
+              <a href="programmation.html" class="header_link">Programmation</a>
+            </li>
+            <li><a href="line-up.html" class="header_link">Line-up</a></li>
+            <li>
+              <a href="billetterie.html" class="header_link active"
+                >Billetterie</a
+              >
+            </li>
+            <li><a href="faq.html" class="header_link">FAQ</a></li>
+            <li><a href="contact.html" class="header_link">Contact</a></li>
+            <li><a href="media.html" class="header_link">Media</a></li>
+          </ul>
+        </nav>
+        <a href="billetterie.html" class="header_cta">Billetterie</a>
+        <button
+          class="header_hamburger"
+          aria-label="Ouvrir le menu"
+          aria-expanded="false"
+        >
+          <span class="header_hamburger-line"></span>
+          <span class="header_hamburger-line"></span>
+          <span class="header_hamburger-line"></span>
+        </button>
+      </div>
+    </header>
 
-  <!-- HEADER -->
-  <header class="header header--scrolled">
-    <div class="header_inner">
-      <a href="index.html" class="header_logo">
-        <span class="header_logo-main">SAPE &amp; LUMIERE</span>
-        <span class="header_logo-sub">Festival</span>
-      </a>
-      <nav class="header_nav">
-        <ul class="header_menu">
-          <li><a href="index.html" class="header_link">Accueil</a></li>
-          <li><a href="programmation.html" class="header_link">Programmation</a></li>
-          <li><a href="line-up.html" class="header_link">Line-up</a></li>
-          <li><a href="billetterie.html" class="header_link active">Billetterie</a></li>
-          <li><a href="faq.html" class="header_link">FAQ</a></li>
-          <li><a href="contact.html" class="header_link">Contact</a></li>
-          <li><a href="media.html" class="header_link">Media</a></li>
-        </ul>
-      </nav>
-      <a href="billetterie.html" class="header_cta">Billetterie</a>
-      <button class="header_hamburger" aria-label="Ouvrir le menu" aria-expanded="false">
-        <span class="header_hamburger-line"></span>
-        <span class="header_hamburger-line"></span>
-        <span class="header_hamburger-line"></span>
-      </button>
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu">
+      <div class="mobile-menu_overlay"></div>
+      <div class="mobile-menu_panel">
+        <button class="mobile-menu_close" aria-label="Fermer le menu">
+          &times;
+        </button>
+        <nav class="mobile-menu_list">
+          <a href="index.html" class="mobile-menu_link">Accueil</a>
+          <a href="programmation.html" class="mobile-menu_link"
+            >Programmation</a
+          >
+          <a href="line-up.html" class="mobile-menu_link">Line-up</a>
+          <a href="billetterie.html" class="mobile-menu_link">Billetterie</a>
+          <a href="faq.html" class="mobile-menu_link">FAQ</a>
+          <a href="contact.html" class="mobile-menu_link">Contact</a>
+          <a href="media.html" class="mobile-menu_link">Media</a>
+        </nav>
+        <a href="billetterie.html" class="mobile-menu_cta">Réserver mon pass</a>
+      </div>
     </div>
-  </header>
 
-  <!-- MOBILE MENU -->
-  <div class="mobile-menu">
-    <div class="mobile-menu_overlay"></div>
-    <div class="mobile-menu_panel">
-      <button class="mobile-menu_close" aria-label="Fermer le menu">&times;</button>
-      <nav class="mobile-menu_list">
-        <a href="index.html" class="mobile-menu_link">Accueil</a>
-        <a href="programmation.html" class="mobile-menu_link">Programmation</a>
-        <a href="line-up.html" class="mobile-menu_link">Line-up</a>
-        <a href="billetterie.html" class="mobile-menu_link">Billetterie</a>
-        <a href="faq.html" class="mobile-menu_link">FAQ</a>
-        <a href="contact.html" class="mobile-menu_link">Contact</a>
-        <a href="media.html" class="mobile-menu_link">Media</a>
-      </nav>
-      <a href="billetterie.html" class="mobile-menu_cta">Reserver mon pass</a>
-    </div>
-  </div>
+    <main>
+      <!-- BILLETTERIE -->
+      <section
+        class="billetterie"
+        style="padding-top: calc(var(--header-h) + 40px)"
+      >
+        <div class="container">
+          <div class="section-header">
+            <span class="section-header_tag">Billetterie</span>
+            <h2 class="section-header_title">
+              Réservez votre place<br />dès maintenant.
+            </h2>
+            <p class="section-header_desc">
+              Deux formules s'offrent à vous pour profiter de l'expérience SAPE
+              &amp; LUMIERE en toute liberté.
+            </p>
+          </div>
+          <div class="billetterie_grid">
+            <!-- Pass 1 Jour -->
+            <div class="billetterie_card">
+              <span class="billetterie_card-tag">Pass</span>
+              <h3 class="billetterie_card-name">1 Jour</h3>
+              <div class="billetterie_card-price">
+                <span class="billetterie_card-amount">5 000</span>
+                <span class="billetterie_card-currency">FCFA</span>
+              </div>
+              <p class="billetterie_card-desc">
+                Accès à toutes les scènes du jour choisi. Découvrez les
+                concerts, défilés et ateliers.
+              </p>
+              <ul class="billetterie_card-features">
+                <li>Accès à toutes les scènes du jour choisi</li>
+                <li>Découvrez les concerts, défilés et ateliers</li>
+                <li>Restauration sur place disponible</li>
+                <li>Zone marchande et expositions</li>
+              </ul>
+              <div class="billetterie_card-btn">
+                <a
+                  href="https://wa.me/242068894725?text=Bonjour%2C%20je%20souhaite%20reserver%20un%20Pass%201%20jour%20pour%20le%20Festival%20Sape%20%26%20Lumiere"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn--whatsapp"
+                >
+                  <svg
+                    class="btn_icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" />
+                  </svg>
+                  Réserver via WhatsApp
+                </a>
+              </div>
+            </div>
+            <!-- Pass 3 Jours -->
+            <div class="billetterie_card billetterie_card--featured">
+              <span class="billetterie_card-badge">Recommandé</span>
+              <span class="billetterie_card-tag">Pass</span>
+              <h3 class="billetterie_card-name">3 Jours</h3>
+              <div class="billetterie_card-price">
+                <span class="billetterie_card-amount">10 000</span>
+                <span class="billetterie_card-currency">FCFA</span>
+              </div>
+              <p class="billetterie_card-desc">
+                Accès complet aux 3 jours du festival. Toutes scènes, défilés et
+                ateliers inclus.
+              </p>
+              <ul class="billetterie_card-features">
+                <li>Accès complet aux 3 jours du festival</li>
+                <li>Toutes scènes, défilés et ateliers inclus</li>
+                <li>Restauration et boissons sur place</li>
+                <li>Zone VIP et rencontres artistes</li>
+                <li>Badge commémoratif officiel</li>
+                <li>Places assises réservées aux concerts</li>
+              </ul>
+              <div class="billetterie_card-btn">
+                <a
+                  href="https://wa.me/242068894725?text=Bonjour%2C%20je%20souhaite%20reserver%20un%20Pass%203%20jours%20pour%20le%20Festival%20Sape%20%26%20Lumiere"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn--whatsapp"
+                >
+                  <svg
+                    class="btn_icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" />
+                  </svg>
+                  Réserver via WhatsApp
+                </a>
+              </div>
+            </div>
+          </div>
+          <p
+            style="
+              text-align: center;
+              margin-top: 32px;
+              font-size: 14px;
+              color: var(--gray);
+            "
+          >
+            Paiement sur place ou via mobile money. Possibilité de groupes à
+            partir de 10 personnes.
+          </p>
+        </div>
+      </section>
 
-  <main>
-    <!-- BILLETTERIE -->
-    <section class="billetterie" style="padding-top: calc(var(--header-h) + 40px)">
+      <!-- INSCRIPTION CTA -->
+      <section class="inscription">
+        <div class="container inscription_inner">
+          <h2 class="inscription_title">Envie de vivre l'expérience ?</h2>
+          <p class="inscription_desc">
+            Rejoignez SAPE &amp; LUMIERE et participez à la célébration de la
+            créativité congolaise.
+          </p>
+          <div class="inscription_action">
+            <a
+              href="https://wa.me/242068894725?text=Bonjour%2C%20je%20souhaite%20reserver%20mon%20pass%20pour%20le%20Festival%20Sape%20%26%20Lumiere"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn--primary btn--lg"
+              >Réserver mon pass</a
+            >
+            <a
+              href="contact.html"
+              class="btn btn--outline btn--lg"
+              style="margin-top: 8px"
+              >Nous contacter</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
       <div class="container">
-        <div class="section-header">
-          <span class="section-header_tag">Billetterie</span>
-          <h2 class="section-header_title">Reservez votre place<br>des maintenant.</h2>
-          <p class="section-header_desc">Deux formules s'offrent a vous pour profiter de l'experience SAPE &amp; LUMIERE en toute liberte.</p>
-        </div>
-        <div class="billetterie_grid">
-          <!-- Pass 1 Jour -->
-          <div class="billetterie_card">
-            <span class="billetterie_card-tag">Pass</span>
-            <h3 class="billetterie_card-name">1 Jour</h3>
-            <div class="billetterie_card-price">
-              <span class="billetterie_card-amount">5 000</span>
-              <span class="billetterie_card-currency">FCFA</span>
-            </div>
-            <p class="billetterie_card-desc">Acces a toutes les scenes du jour choisi. Decouvrez les concerts, defiles et ateliers.</p>
-            <ul class="billetterie_card-features">
-              <li>Acces a toutes les scenes du jour choisi</li>
-              <li>Decouvrez les concerts, defiles et ateliers</li>
-              <li>Restauration sur place disponible</li>
-              <li>Zone marchande et expositions</li>
-            </ul>
-            <div class="billetterie_card-btn">
-              <a href="https://wa.me/242064400881?text=Bonjour%2C%20je%20souhaite%20reserver%20un%20Pass%201%20jour%20pour%20le%20Festival%20Sape%20%26%20Lumiere" target="_blank" rel="noopener noreferrer" class="btn btn--whatsapp">
-                <svg class="btn_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>
-                Reserver via WhatsApp
-              </a>
-            </div>
-          </div>
-          <!-- Pass 3 Jours -->
-          <div class="billetterie_card billetterie_card--featured">
-            <span class="billetterie_card-badge">Recommande</span>
-            <span class="billetterie_card-tag">Pass</span>
-            <h3 class="billetterie_card-name">3 Jours</h3>
-            <div class="billetterie_card-price">
-              <span class="billetterie_card-amount">10 000</span>
-              <span class="billetterie_card-currency">FCFA</span>
-            </div>
-            <p class="billetterie_card-desc">Acces complet aux 3 jours du festival. Toutes scenes, defiles et ateliers inclus.</p>
-            <ul class="billetterie_card-features">
-              <li>Acces complet aux 3 jours du festival</li>
-              <li>Toutes scenes, defiles et ateliers inclus</li>
-              <li>Restauration et boissons sur place</li>
-              <li>Zone VIP et rencontres artistes</li>
-              <li>Badge commemoratif officiel</li>
-              <li>Places assisees reservees aux concerts</li>
-            </ul>
-            <div class="billetterie_card-btn">
-              <a href="https://wa.me/242064400881?text=Bonjour%2C%20je%20souhaite%20reserver%20un%20Pass%203%20jours%20pour%20le%20Festival%20Sape%20%26%20Lumiere" target="_blank" rel="noopener noreferrer" class="btn btn--whatsapp">
-                <svg class="btn_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>
-                Reserver via WhatsApp
-              </a>
-            </div>
-          </div>
-        </div>
-        <p style="text-align:center;margin-top:32px;font-size:14px;color:var(--gray)">Paiement sur place ou via mobile money. Possibilite de groupes a partir de 10 personnes.</p>
-      </div>
-    </section>
-
-    <!-- INSCRIPTION CTA -->
-    <section class="inscription">
-      <div class="container inscription_inner">
-        <h2 class="inscription_title">Envie de vivre l'experience ?</h2>
-        <p class="inscription_desc">Rejoignez SAPE &amp; LUMIERE et participez a la celebration de la creativite congolaise.</p>
-        <div class="inscription_action">
-          <a href="https://wa.me/242064400881?text=Bonjour%2C%20je%20souhaite%20reserver%20mon%20pass%20pour%20le%20Festival%20Sape%20%26%20Lumiere" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--lg">Reserver mon pass</a>
-          <a href="contact.html" class="btn btn--outline btn--lg" style="margin-top:8px">Nous contacter</a>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer_top">
-        <div>
-          <div class="footer_logo">
-            <span class="footer_logo-main">SAPE &amp; LUMIERE</span>
-            <span class="footer_logo-sub">Festival</span>
-          </div>
-          <p class="footer_tagline">Le rendez-vous de la musique, de la mode et de la création congolaise, au coeur de Brazzaville.</p>
-        </div>
-        <div class="footer_nav">
+        <div class="footer_top">
           <div>
-            <h4 class="footer_col-title">Navigation</h4>
-            <ul class="footer_list">
-              <li><a href="index.html">Accueil</a></li>
-              <li><a href="programmation.html">Programmation</a></li>
-              <li><a href="line-up.html">Line-up</a></li>
-              <li><a href="billetterie.html">Billetterie</a></li>
-              <li><a href="faq.html">FAQ</a></li>
-              <li><a href="contact.html">Contact</a></li>
-            </ul>
+            <div class="footer_logo">
+              <span class="footer_logo-main">SAPE &amp; LUMIERE</span>
+              <span class="footer_logo-sub">Festival</span>
+            </div>
+            <p class="footer_tagline">
+              Le rendez-vous de la musique, de la mode et de la création
+              congolaise, au cœur de Brazzaville.
+            </p>
           </div>
-          <div>
-            <h4 class="footer_col-title">Contact</h4>
-            <p class="footer_address">Brazzaville<br>Republique du Congo</p>
-            <p class="footer_address"><a href="https://wa.me/242064400881" target="_blank" rel="noopener noreferrer" style="color:inherit">+242 06 440 08 81</a></p>
-            <p class="footer_address"><a href="mailto:contact@sapelumiere.cg" style="color:inherit">contact@sapelumiere.cg</a></p>
+          <div class="footer_nav">
+            <div>
+              <h4 class="footer_col-title">Navigation</h4>
+              <ul class="footer_list">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="programmation.html">Programmation</a></li>
+                <li><a href="line-up.html">Line-up</a></li>
+                <li><a href="billetterie.html">Billetterie</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="footer_col-title">Contact</h4>
+              <p class="footer_address">Brazzaville<br />République du Congo</p>
+              <p class="footer_address">
+                <a
+                  href="https://wa.me/242068894725"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style="color: inherit"
+                  >+242 06 889 47 25</a
+                >
+              </p>
+              <p class="footer_address">
+                <a href="mailto:contact@sapelumiere.cg" style="color: inherit"
+                  >contact@sapelumiere.cg</a
+                >
+              </p>
+            </div>
+            <div>
+              <h4 class="footer_col-title">Billetterie</h4>
+              <p class="footer_address">
+                Réservez votre pass pour le festival SAPE &amp; LUMIERE.
+              </p>
+            </div>
           </div>
-          <div>
-            <h4 class="footer_col-title">Billetterie</h4>
-            <p class="footer_address">Reservez votre pass pour le festival SAPE &amp; LUMIERE.</p>
+        </div>
+        <div class="footer_bottom">
+          <p class="footer_copy">
+            &copy; 2026 SAPE &amp; LUMIERE FESTIVAL - Tous droits réservés.
+          </p>
+          <div class="footer_legal">
+            <a href="#">Mentions légales</a>
+            <a href="#">Politique de confidentialité</a>
           </div>
         </div>
       </div>
-      <div class="footer_bottom">
-        <p class="footer_copy">&copy; 2026 SAPE &amp; LUMIERE FESTIVAL — Tous droits reserves.</p>
-        <div class="footer_legal">
-          <a href="#">Mentions legales</a>
-          <a href="#">Politique de confidentialite</a>
-        </div>
-      </div>
-    </div>
-  </footer>
+    </footer>
 
-  <button class="scroll-top" aria-label="Retour en haut">
-    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
-  </button>
+    <button class="scroll-top" aria-label="Retour en haut">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="20"
+        height="20"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path d="m18 15-6-6-6 6" />
+      </svg>
+    </button>
 
-  <script src="js/main.js"></script>
-</body>
+    <script src="js/main.js"></script>
+  </body>
 </html>

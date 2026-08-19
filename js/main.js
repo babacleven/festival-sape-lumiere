@@ -108,24 +108,24 @@ document.addEventListener("DOMContentLoaded", () => {
   const programData = {
     Vendredi: [
       {
-        titre: "Ceremonie d'ouverture",
+        titre: "Cérémonie d'ouverture",
         scene: "Scene Congo",
         heure: "18:00",
-        desc: "Discours, fanfare et parade d'ouverture avec les Sappeur & Performancess de Bacongo.",
+        desc: "Discours, fanfare et parade d'ouverture avec les Sapeurs & Performeurs de Bacongo.",
         img: "assets/images/ceremonie_ouverture.webp",
       },
       {
         titre: "Grand concert inaugural",
         scene: "Scene Lumiere",
         heure: "20:30",
-        desc: "Rumba contemporaine, afro-pop et creation originale pour lancer les trois jours.",
+        desc: "Rumba contemporaine, afro-pop et création originale pour lancer les trois jours.",
         img: "assets/images/photo-congo-musique-2.jpg",
       },
       {
         titre: "Nuit electro Brazza",
         scene: "Scene Kintele",
         heure: "23:00",
-        desc: "Tidiane Mario set jusqu'au bout de la nuit, mapping video et jeux de lumiere.",
+        desc: "Concert live de Tidiane Mario pour clore cette première nuit du festival.",
         img: "assets/images/maxresdefault.jpg",
       },
     ],
@@ -138,17 +138,17 @@ document.addEventListener("DOMContentLoaded", () => {
         img: "assets/images/fespam_ouverture-2.jpeg",
       },
       {
-        titre: "Defile SAPE & Createurs",
+        titre: "Défilé SAPE & Créateurs",
         scene: "Podium Elegance",
         heure: "17:30",
-        desc: "Dix maisons congolaises presentent leurs collections en plein air.",
+        desc: "Dix maisons congolaises présentent leurs collections en plein air.",
         img: "assets/images/fashion.jpg",
       },
       {
         titre: "Grande nuit des concerts",
         scene: "Scene Lumiere",
         heure: "21:00",
-        desc: "Quatre tetes d'affiche, orchestre live et invites surprises.",
+        desc: "Quatre têtes d'affiche, orchestre live et invités surprises.",
         img: "assets/images/Fespam_jour2_Mayanga6-1.jpg",
       },
     ],
@@ -157,21 +157,21 @@ document.addEventListener("DOMContentLoaded", () => {
         titre: "Panel : transmettre la SAPE",
         scene: "Espace Palabre",
         heure: "11:00",
-        desc: "Rencontre entre Sappeur & Performancess historiques, jeunes createurs et chercheurs.",
+        desc: "Rencontre entre Sapeurs & Performeurs historiques, jeunes créateurs et chercheurs.",
         img: "assets/images/crowd.jpeg",
       },
       {
         titre: "Ateliers art & artisanat",
         scene: "Village Culture",
         heure: "15:00",
-        desc: "Serigraphie, photographie de rue, percussions et couture ouverte a tous.",
-        img: "assets/images/les_bancs_fileminimizer.jpg",
+        desc: "Sérigraphie, photographie de rue, percussions et couture ouverte à tous.",
+        img: "assets/images/les_bancs_fileminimizer.webp",
       },
       {
-        titre: "Concert de cloture",
+        titre: "Concert de clôture",
         scene: "Scene Congo",
         heure: "19:00",
-        desc: "Final collectif reunissant tous les artistes du festival sur scene.",
+        desc: "Final collectif réunissant tous les artistes du festival sur scène.",
         img: "assets/images/Fespam_jour2_Mayanga7-1.jpg",
       },
     ],
@@ -236,28 +236,28 @@ document.addEventListener("DOMContentLoaded", () => {
       img: "assets/images/channels4_profile.jpg",
     },
     {
-      nom: "Sappeur & Performances",
+      nom: "Sapeurs & Performeurs",
       cat: "Art Lumiere",
       jour: "Samedi",
       img: "assets/images/artist-2.jpg",
     },
     {
-      nom: "Sappeur & Performances ",
+      nom: "Sapeurs & Performeurs",
       cat: "Mode et Sape",
       jour: "Samedi",
       img: "assets/images/fashion.jpg",
     },
     {
-      nom: "Les Sappeur & Performancess de Bacongo",
+      nom: "Les Sapeurs & Performeurs de Bacongo",
       cat: "Mode et Sape",
       jour: "Vendredi",
       img: "assets/images/WhatsApp Image at 15.23.43.jpeg",
     },
     {
-      nom: "Defilé de mode",
+      nom: "Défilé de mode",
       cat: "Art Lumiere",
       jour: "Dimanche",
-      img: "assets/images/defiler.jpg",
+      img: "assets/images/defiler.webp",
     },
     {
       nom: "Programme Artistique",
@@ -304,6 +304,71 @@ document.addEventListener("DOMContentLoaded", () => {
     renderArtists("Tous");
   }
 
+  /* -- Artist Modal -- */
+  const modal = document.getElementById("artist-modal");
+  if (modal) {
+    const overlay = modal.querySelector(".artist-modal_overlay");
+    const closeBtn = modal.querySelector(".artist-modal_close");
+    const modalImg = modal.querySelector(".artist-modal_img");
+    const modalName = modal.querySelector(".artist-modal_name");
+    const modalCat = modal.querySelector(".artist-modal_cat");
+    const modalJour = modal.querySelector(".artist-modal_jour");
+
+    function openModal(artist) {
+      modalImg.src = artist.img;
+      modalImg.alt = artist.nom + ", " + artist.cat;
+      modalName.textContent = artist.nom;
+      modalCat.textContent = artist.cat;
+      modalJour.textContent = artist.jour;
+      modal.classList.add("open");
+      modal.setAttribute("aria-hidden", "false");
+      document.body.style.overflow = "hidden";
+    }
+
+    function closeModal() {
+      modal.classList.remove("open");
+      modal.setAttribute("aria-hidden", "true");
+      document.body.style.overflow = "";
+    }
+
+    document.addEventListener("click", (e) => {
+      const card = e.target.closest(".artist-card");
+      if (!card) return;
+      const name = card.querySelector(".artist-card_name");
+      if (!name) return;
+      const artist = artists.find((a) => a.nom === name.textContent);
+      if (artist) openModal(artist);
+    });
+
+    closeBtn.addEventListener("click", closeModal);
+    overlay.addEventListener("click", closeModal);
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") closeModal();
+    });
+  }
+
+  /* -- Line-up Preview (index) -- */
+  const previewGrid = document.getElementById("lineup-preview");
+  if (previewGrid) {
+    const preview = artists.slice(0, 3);
+    previewGrid.innerHTML = preview
+      .map(
+        (a) => `
+      <article class="artist-card">
+        <div class="artist-card_img-wrap">
+          <img class="artist-card_img" src="${a.img}" alt="${a.nom}, ${a.cat}" loading="lazy">
+          <span class="artist-card_cat">${a.cat}</span>
+        </div>
+        <div class="artist-card_body">
+          <h3 class="artist-card_name">${a.nom}</h3>
+          <p class="artist-card_meta">${a.jour}</p>
+        </div>
+      </article>
+    `,
+      )
+      .join("");
+  }
+
   /* -- FAQ Accordion -- */
   const faqItems = document.querySelectorAll(".faq-item_q");
   faqItems.forEach((btn) => {
@@ -322,12 +387,12 @@ document.addEventListener("DOMContentLoaded", () => {
       e.preventDefault();
       const errors = {};
       const nom = contactForm.querySelector('[name="nom"]');
-      const tel = contactForm.querySelector('[name="telephone"]');
+      const email = contactForm.querySelector('[name="email"]');
       const msg = contactForm.querySelector('[name="message"]');
       if (!nom.value.trim()) errors.nom = "Le nom est obligatoire.";
-      if (!tel.value.trim()) errors.telephone = "Le telephone est obligatoire.";
-      else if (tel.value.replace(/\D/g, "").length < 8)
-        errors.telephone = "Numero invalide.";
+      if (!email.value.trim()) errors.email = "L'e-mail est obligatoire.";
+      else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value.trim()))
+        errors.email = "Adresse e-mail invalide.";
       if (!msg.value.trim()) errors.message = "Un message est requis.";
       contactForm
         .querySelectorAll(".contact_error")
@@ -341,10 +406,24 @@ document.addEventListener("DOMContentLoaded", () => {
         });
         return;
       }
-      contactForm.style.display = "none";
-      const success =
-        contactForm.parentElement.querySelector(".contact_success");
-      if (success) success.style.display = "block";
+      const formData = new FormData(contactForm);
+      fetch(contactForm.action, {
+        method: "POST",
+        body: formData,
+        headers: { Accept: "application/json" },
+      })
+        .then(() => {
+          contactForm.style.display = "none";
+          const success =
+            contactForm.parentElement.querySelector(".contact_success");
+          if (success) success.style.display = "block";
+        })
+        .catch(() => {
+          contactForm.style.display = "none";
+          const success =
+            contactForm.parentElement.querySelector(".contact_success");
+          if (success) success.style.display = "block";
+        });
     });
   }
 
@@ -370,17 +449,17 @@ document.addEventListener("DOMContentLoaded", () => {
       fields.type = typeInput ? typeInput.value : "";
       const errors = {};
       if (!fields.nom) errors.nom = "Le nom est obligatoire.";
-      else if (fields.nom.length > 60) errors.nom = "60 caracteres maximum.";
-      if (!fields.prenom) errors.prenom = "Le prenom est obligatoire.";
+      else if (fields.nom.length > 60) errors.nom = "60 caractères maximum.";
+      if (!fields.prenom) errors.prenom = "Le prénom est obligatoire.";
       else if (fields.prenom.length > 60)
-        errors.prenom = "60 caracteres maximum.";
+        errors.prenom = "60 caractères maximum.";
       if (!fields.email) errors.email = "L'email est obligatoire.";
       else if (!/^[^\s@]+@[^\s@]+\.[a-z]{2,}$/i.test(fields.email))
         errors.email = "Adresse email invalide.";
       const digits = fields.telephone.replace(/\D/g, "");
-      if (!digits) errors.telephone = "Le telephone est obligatoire.";
+      if (!digits) errors.telephone = "Le téléphone est obligatoire.";
       else if (digits.length < 8 || digits.length > 12)
-        errors.telephone = "Numero invalide (8 a 12 chiffres).";
+        errors.telephone = "Numéro invalide (8 à 12 chiffres).";
       if (!fields.type) errors.type = "Choisissez un type de participant.";
       inscrForm
         .querySelectorAll(".contact_error")

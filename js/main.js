@@ -220,50 +220,91 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       nom: "Tété Ketch",
       cat: "Musique",
-      jour: "Vendredi",
+      jour: "Vendredi 20 Nov.",
+      heure: "21h00 - 22h00",
+      lieu: "Scène principale",
+      bio: "Tété (prénom d'origine wolof signifiant « le guide »), né le 25 juillet 1975 à Dakar, Sénégal. Artiste de musique urbaine congolaise et afrobeat, il est une figure emblématique de la scène musicale de Brazzaville.",
       img: "assets/images/musicien.jpg",
     },
     {
-      nom: "Tidiane mario",
+      nom: "Tidiane Mario",
       cat: "Musique",
-      jour: "Samedi",
+      jour: "Samedi 21 Nov.",
+      heure: "22h00 - 23h30",
+      lieu: "Scène principale",
+      bio: "Jostie Tidiane Matsouma Mario, né le 16 février 1992 à Brazzaville. Artiste Afrobeat, Hip-Hop et Afro-pop. Débuts en 2013 au sein du groupe A6, d'abord comme danseur puis chanteur. Concert live pour clore cette première nuit du festival.",
       img: "assets/images/musique.jpg",
     },
     {
       nom: "Paterne Maestro",
       cat: "Musique",
-      jour: "Vendredi",
+      jour: "Vendredi 20 Nov.",
+      heure: "19h00 - 20h00",
+      lieu: "Scène secondaire",
+      bio: "Auge Paterne Okonda Otou, né le 3 septembre 1996 à Brazzaville. Pionnier du « rap folklorique » - un mélange de rap et de folklore congolais avec des textes conscients enracinés dans la culture locale. Initié dès l'âge de 6 ans dans les églises et groupes de quartier.",
       img: "assets/images/channels4_profile.jpg",
+    },
+    {
+      nom: "Michelle",
+      cat: "Mode et Sape",
+      jour: "Vendredi 20 Nov.",
+      heure: "17h00 - 17h45",
+      lieu: "Parcours défilé",
+      bio: "32 ans, Sapeuse congolaise, employée au ministère de l'Agriculture. Sapeuse depuis 6 ans. Reconnue pour ses tenues élégantes et modernes.",
+      img: "assets/images/Michelle.png",
+    },
+    {
+      nom: "Edith",
+      cat: "Mode et Sape",
+      jour: "Vendredi 20 Nov.",
+      heure: "17h00 - 17h45",
+      lieu: "Parcours défilé",
+      bio: "47 ans, Sapeuse congolaise, mère de 4 enfants. Sapeuse depuis 36 ans. Connue pour ses costumes Pierre Cardin et ses lunettes Versace. Figure respectée dans les défilés de Bacongo.",
+      img: "assets/images/Edith.png",
+    },
+    {
+      nom: "Judith, Ntsimba & Okili",
+      cat: "Mode et Sape",
+      jour: "Vendredi 20 Nov.",
+      heure: "17h00 - 17h45",
+      lieu: "Parcours défilé",
+      bio: "Judith (39 ans, policière) - Sapeuse depuis 18 ans, mère de trois enfants. Style sobre mais affirmé, aime les costumes Yves Saint Laurent. Ntsimba Marie Jeanne (52 ans) - Sapeuse depuis 20 ans, préfère les costumes Jean Courcel et accessoires Chanel. Okili (10 ans, élève) - Fils de Judith, jeune sapeur déjà passionné par les costumes Yves Saint Laurent.",
+      img: "assets/images/Judith,Okili,Ntsimba .png",
+    },
+    {
+      nom: "Sapeurs de Bacongo",
+      cat: "Mode et Sape",
+      jour: "Vendredi 20 Nov.",
+      heure: "17h00 - 17h45",
+      lieu: "Parcours défilé",
+      img: "assets/images/WhatsApp Image at 15.23.43.jpeg",
     },
     {
       nom: "Sapeurs & Performeurs",
       cat: "Art Lumiere",
-      jour: "Samedi",
+      jour: "Samedi 21 Nov.",
+      heure: "18h00 - 18h45",
+      lieu: "Espace lumière",
+      bio: "Spectacle immersif mêlant art de la sape et performance lumineuse. Les sapeurs défilent sous les effets de lumière, combinant élégance vestimentaire et expression artistique dans un parcours son et lumière.",
       img: "assets/images/artist-2.jpg",
-    },
-    {
-      nom: "Sapeurs & Performeurs",
-      cat: "Mode et Sape",
-      jour: "Samedi",
-      img: "assets/images/fashion.jpg",
-    },
-    {
-      nom: "Les Sapeurs & Performeurs de Bacongo",
-      cat: "Mode et Sape",
-      jour: "Vendredi",
-      img: "assets/images/WhatsApp Image at 15.23.43.jpeg",
     },
     {
       nom: "Défilé de mode",
       cat: "Art Lumiere",
-      jour: "Dimanche",
+      jour: "Dimanche 22 Nov.",
+      heure: "16h00 - 17h00",
+      lieu: "Piste principale",
+      bio: "Créateurs : Stéphane Malonga (costumes sur mesure, Brazzaville), Claudine Mbemba (robes haute couture aux couleurs vives). Mannequins dans l'ordre de passage : Prisca Mvoula, Christelle Mabiala, Junior Mavoungou, Sandra Ngalou.",
       img: "assets/images/defiler.webp",
     },
     {
       nom: "Programme Artistique",
       cat: "Art Lumiere",
-      jour: "Dimanche",
-      img: "assets/images/GAL_10.jpg",
+      jour: "Dimanche 22 Nov.",
+      heure: "19h00 - 22h00",
+      lieu: "Toutes les scènes",
+      bio: "19h00 - Groupe de tambours « Ngoma Ya Kongo » : rythmes ancestraux. 20h00 - Danseurs « Les Lumières de Bacongo » : performance chorégraphique avec jeux de lumière. 21h00 - Performance lumineuse « Mapping Brazzaville » : projection vidéo sur scène.",
+      img: "assets/images/fespam_ouverture-2.jpeg",
     },
   ];
 
@@ -284,7 +325,7 @@ document.addEventListener("DOMContentLoaded", () => {
         </div>
         <div class="artist-card_body">
           <h3 class="artist-card_name">${a.nom}</h3>
-          <p class="artist-card_meta">${a.jour}</p>
+          <p class="artist-card_meta">${a.jour}${a.heure ? " &middot; " + a.heure : ""}</p>
         </div>
       </article>
     `,
@@ -313,13 +354,34 @@ document.addEventListener("DOMContentLoaded", () => {
     const modalName = modal.querySelector(".artist-modal_name");
     const modalCat = modal.querySelector(".artist-modal_cat");
     const modalJour = modal.querySelector(".artist-modal_jour");
+    const modalHeure = modal.querySelector(".artist-modal_heure");
+    const modalLieu = modal.querySelector(".artist-modal_lieu");
+    const modalBio = modal.querySelector(".artist-modal_bio");
+    const modalSapeurs = modal.querySelector(".artist-modal_sapeurs");
+    const modalSapeursList = modal.querySelector(".artist-modal_sapeurs-list");
 
     function openModal(artist) {
       modalImg.src = artist.img;
       modalImg.alt = artist.nom + ", " + artist.cat;
       modalName.textContent = artist.nom;
       modalCat.textContent = artist.cat;
-      modalJour.textContent = artist.jour;
+      modalJour.textContent = artist.jour || "";
+      modalHeure.textContent = artist.heure || "A confirmer";
+      modalLieu.textContent = artist.lieu || "A confirmer";
+      if (artist.bio) {
+        modalBio.textContent = artist.bio;
+        modalBio.style.display = "block";
+      } else {
+        modalBio.style.display = "none";
+      }
+      if (artist.sapeurs && artist.sapeurs.length > 0) {
+        modalSapeursList.innerHTML = artist.sapeurs
+          .map((s) => `<li>${s.prenom} - ${s.nationalite}</li>`)
+          .join("");
+        modalSapeurs.style.display = "block";
+      } else {
+        modalSapeurs.style.display = "none";
+      }
       modal.classList.add("open");
       modal.setAttribute("aria-hidden", "false");
       document.body.style.overflow = "hidden";

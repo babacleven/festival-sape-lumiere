@@ -252,7 +252,7 @@ document.addEventListener("DOMContentLoaded", () => {
       heure: "14h00 - 14h30",
       lieu: "Parcours défilé",
       bio: "32 ans, Sapeuse congolaise, employée au ministère de l'Agriculture. Sapeuse depuis 6 ans. Reconnue pour ses tenues élégantes et modernes.",
-      img: "assets/images/Michelle.png",
+      img: "assets/images/Michelle.webp",
     },
     {
       nom: "Edith",
@@ -261,7 +261,7 @@ document.addEventListener("DOMContentLoaded", () => {
       heure: "14h45 - 15h30",
       lieu: "Parcours défilé",
       bio: "47 ans, Sapeuse congolaise, mère de 4 enfants. Sapeuse depuis 36 ans. Connue pour ses costumes Pierre Cardin et ses lunettes Versace. Figure respectée dans les défilés de Bacongo.",
-      img: "assets/images/Edith.png",
+      img: "assets/images/Edith.webp",
     },
     {
       nom: "Judith, Ntsimba & Okili",
@@ -270,7 +270,7 @@ document.addEventListener("DOMContentLoaded", () => {
       heure: "15h35 - 16h30",
       lieu: "Parcours défilé",
       bio: "Judith (39 ans, policière) - Sapeuse depuis 18 ans, mère de trois enfants. Style sobre mais affirmé, aime les costumes Yves Saint Laurent. Ntsimba Marie Jeanne (52 ans) - Sapeuse depuis 20 ans, préfère les costumes Jean Courcel et accessoires Chanel. Okili (10 ans, élève) - Fils de Judith, jeune sapeur déjà passionné par les costumes Yves Saint Laurent.",
-      img: "assets/images/Judith,Okili,Ntsimba .png",
+      img: "assets/images/Judith.webp",
     },
     {
       nom: "Sapeurs de Bacongo",

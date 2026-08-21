@@ -76,6 +76,7 @@ h4 {
   --white: #ffffff;
   --gold: #c9a84c;
   --gold-light: #e0c97f;
+  --congo-gradient: linear-gradient(135deg, var(--green) 0%, var(--green) 33%, var(--yellow) 33%, var(--yellow) 66%, var(--red) 66%, var(--red) 100%);
   --container: 1200px;
   --gutter: clamp(16px, 4vw, 60px);
   --header-h: 60px;
@@ -172,14 +173,63 @@ h4 {
   position: absolute;
   top: 50%;
   width: 30px;
-  height: 1px;
-  background: var(--green);
+  height: 2px;
+  background: var(--congo-gradient);
 }
 .section-header_tag::before {
   right: 100%;
 }
 .section-header_tag::after {
   left: 100%;
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 4px;
+  background: var(--congo-gradient);
+}
+.countdown::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 4px;
+  background: var(--congo-gradient);
+}
+.programmation::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 4px;
+  background: var(--congo-gradient);
+}
+.lineup::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 4px;
+  background: var(--congo-gradient);
+}
+.inscription {
+  position: relative;
+  overflow: hidden;
+}
+.inscription::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 4px;
+  background: var(--congo-gradient);
+}
+.footer {
+  position: relative;
+}
+.footer::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 4px;
+  background: var(--congo-gradient);
 }
 .section-header_title {
   font-size: clamp(24px, 5vw, 48px);
@@ -604,6 +654,7 @@ h4 {
    COUNTDOWN
    ============================================================ */
 .countdown {
+  position: relative;
   background: var(--anthracite);
   padding: clamp(32px, 6vw, 48px) 0;
   border-top: 1px solid rgba(254, 203, 0, 0.15);
@@ -661,6 +712,7 @@ h4 {
    PROGRAMMATION
    ============================================================ */
 .programmation {
+  position: relative;
   padding: clamp(48px, 8vw, 96px) 0;
   background: var(--gray-bg);
   border-top: 1px solid rgba(0, 0, 0, 0.06);
@@ -781,6 +833,7 @@ h4 {
    LINEUP
    ============================================================ */
 .lineup {
+  position: relative;
   padding: clamp(48px, 8vw, 96px) 0;
   background: var(--anthracite);
   overflow: hidden;

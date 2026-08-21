@@ -438,8 +438,28 @@ document.addEventListener("DOMContentLoaded", () => {
     btn.addEventListener("click", () => {
       const expanded = btn.getAttribute("aria-expanded") === "true";
       const answer = btn.nextElementSibling;
+      // Fermer toutes les autres reponses
+      faqItems.forEach((otherBtn) => {
+        if (otherBtn !== btn) {
+          otherBtn.setAttribute("aria-expanded", "false");
+          const otherAnswer = otherBtn.nextElementSibling;
+          if (otherAnswer) {
+            otherAnswer.style.maxHeight = null;
+            otherAnswer.classList.remove("open");
+          }
+        }
+      });
+      // Toggle la reponse cliquee
       btn.setAttribute("aria-expanded", !expanded);
-      if (answer) answer.style.display = expanded ? "none" : "block";
+      if (answer) {
+        if (expanded) {
+          answer.style.maxHeight = null;
+          answer.classList.remove("open");
+        } else {
+          answer.classList.add("open");
+          answer.style.maxHeight = answer.scrollHeight + "px";
+        }
+      }
     });
   });
 

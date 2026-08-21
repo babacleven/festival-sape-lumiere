@@ -1362,10 +1362,17 @@ h4 {
   color: var(--white);
 }
 .faq-item_a {
-  padding: 0 0 clamp(14px, 3vw, 20px);
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 0 0;
   font-size: clamp(13px, 1.6vw, 15px);
   color: var(--gray);
   line-height: 1.7;
+  transition: max-height 0.4s ease, padding 0.4s ease;
+}
+.faq-item_a.open {
+  padding: 0 0 clamp(14px, 3vw, 20px);
+}
 }
 
 /* ============================================================

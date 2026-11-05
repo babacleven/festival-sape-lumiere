@@ -33,9 +33,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   /* -- Header scroll -- */
   const header = document.querySelector(".header");
-  if (header && !header.classList.contains("header-scrolled")) {
+  if (header && !header.classList.contains("header--scrolled")) {
     const onScroll = () => {
-      header.classList.toggle("header-scrolled", window.scrollY > 24);
+      header.classList.toggle("header--scrolled", window.scrollY > 24);
     };
     window.addEventListener("scroll", onScroll, { passive: true });
   }

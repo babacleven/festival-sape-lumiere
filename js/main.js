@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const ms = Math.max(0, target - now);
       if (ms === 0) {
         countdownEl.innerHTML =
-          '<p style="font-size:clamp(18px,4vw,28px);font-weight:700;color:var(--green);text-align:center">Le Festival est ouvert !</p>';
+          '<p style="font-size:clamp(18px,4vw,28px);font-weight:700;color:var(--lime);text-align:center">Le Festival est ouvert !</p>';
         return;
       }
       const d = Math.floor(ms / 86400000);
@@ -72,23 +72,34 @@ document.addEventListener("DOMContentLoaded", () => {
   /* -- Scroll Reveal (IntersectionObserver) -- */
   const revealSelectors =
     ".section-header, .program-card, .artist-card, .billetterie_card, .faq-item, .partenaire-card, .media-card, .inscription_inner, .contact_form, .countdown_inner";
-  const reveals = document.querySelectorAll(revealSelectors);
-  if (reveals.length && "IntersectionObserver" in window) {
-    const io = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((e) => {
-          if (e.isIntersecting) {
-            e.target.classList.add("revealed");
-            io.unobserve(e.target);
-          }
-        });
-      },
-      { threshold: 0.08 },
-    );
-    reveals.forEach((el) => io.observe(el));
-  } else {
-    reveals.forEach((el) => el.classList.add("revealed"));
+  const supportsObserver = "IntersectionObserver" in window;
+  let revealObserver = null;
+
+  function observeReveals(root) {
+    const scope = root || document;
+    const els = scope.querySelectorAll(revealSelectors);
+    if (!supportsObserver) {
+      els.forEach((el) => el.classList.add("revealed"));
+      return;
+    }
+    if (!revealObserver) {
+      revealObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((e) => {
+            if (e.isIntersecting) {
+              e.target.classList.add("revealed");
+              revealObserver.unobserve(e.target);
+            }
+          });
+        },
+        { threshold: 0.08 },
+      );
+    }
+    els.forEach((el) => {
+      if (!el.classList.contains("revealed")) revealObserver.observe(el);
+    });
   }
+  observeReveals();
 
   /* -- Scroll To Top -- */
   const scrollTopBtn = document.querySelector(".scroll-top");
@@ -201,6 +212,7 @@ document.addEventListener("DOMContentLoaded", () => {
     `,
       )
       .join("");
+    observeReveals(programList);
   }
 
   if (tabsContainer) {
@@ -332,6 +344,7 @@ document.addEventListener("DOMContentLoaded", () => {
     `,
       )
       .join("");
+    observeReveals(lineupGrid);
   }
 
   if (filtersContainer) {
@@ -430,6 +443,7 @@ document.addEventListener("DOMContentLoaded", () => {
     `,
       )
       .join("");
+    observeReveals(previewGrid);
   }
 
   /* -- FAQ Accordion -- */

@@ -478,8 +478,46 @@
             </div>
           </div>
         </div>
-      </section
+      </section>
     </main>
+
+    <!-- ARTIST MODAL -->
+    <div
+      class="artist-modal"
+      id="artist-modal"
+      role="dialog"
+      aria-modal="true"
+      aria-hidden="true"
+    >
+      <div class="artist-modal_overlay"></div>
+      <div class="artist-modal_panel">
+        <button class="artist-modal_close" aria-label="Fermer">&times;</button>
+        <img class="artist-modal_img" src="" alt="" />
+        <div class="artist-modal_body">
+          <span class="artist-modal_cat"></span>
+          <h2 class="artist-modal_name"></h2>
+          <div class="artist-modal_details">
+            <p class="artist-modal_detail">
+              <span class="artist-modal_label">Jour</span>
+              <span class="artist-modal_jour"></span>
+            </p>
+            <p class="artist-modal_detail">
+              <span class="artist-modal_label">Heure</span>
+              <span class="artist-modal_heure"></span>
+            </p>
+            <p class="artist-modal_detail">
+              <span class="artist-modal_label">Lieu</span>
+              <span class="artist-modal_lieu"></span>
+            </p>
+          </div>
+          <div class="artist-modal_sapeurs" style="display: none">
+            <p class="artist-modal_label">Sapeurs presents</p>
+            <ul class="artist-modal_sapeurs-list"></ul>
+          </div>
+          <p class="artist-modal_bio"></p>
+        </div>
+      </div>
+    </div>
 
     <!-- FOOTER -->
     <footer class="footer">
